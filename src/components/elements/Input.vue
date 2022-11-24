@@ -19,11 +19,9 @@ export default {
     },
     value: {
       type: String,
-      required: true,
     },
     placeholder: {
       type: String,
-      required: false,
     },
   },
 
@@ -60,5 +58,6 @@ input {
   background: #eff0f1;
   border-radius: 10px;
   outline: none;
+  border: none;
 }
 </style>
