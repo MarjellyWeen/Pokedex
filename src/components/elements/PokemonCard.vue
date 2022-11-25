@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item" @click="onNavigate">
     <img
       src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
     />
@@ -23,13 +23,17 @@ export default {
       type: Object,
     },
   },
+  methods: {
+    onNavigate() {
+      this.$router.push(`/details/${this.pokemon?.id}`);
+    },
+  },
 };
 </script>
 
 <style scoped>
 .item {
   display: flex;
-  width: 340px;
   height: 70px;
   background: #ffffff;
   box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.04);
