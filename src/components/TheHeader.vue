@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" v-bind:class="isLightColor && 'is-light'">
     <h1 class="title">{{ title }}</h1>
     <div class="icon-container">
       <font-awesome-icon
@@ -35,6 +35,9 @@ export default {
     isDetailsView: {
       type: Boolean,
     },
+    isLightColor: {
+      type: Boolean,
+    },
   },
 };
 </script>
@@ -51,6 +54,9 @@ export default {
   height: 41px;
   width: inherit;
   align-self: end;
+}
+.is-light {
+  color: #ffffff;
 }
 .icon-container {
   display: flex;
