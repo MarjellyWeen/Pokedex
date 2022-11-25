@@ -1,7 +1,9 @@
+<script setup lang="ts">
+import ThePokemonDetails from "@/components/ThePokemonDetails.vue";
+</script>
+
 <template>
-  <div class="detail">
-    <h1>This is a pokemon details view</h1>
-  </div>
+  <ThePokemonDetails />
 </template>
 
 <style>
