@@ -1,25 +1,55 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-
+  padding: 1rem;
   font-weight: normal;
+  padding-top: max(30px, env(safe-area-inset-top));
+}
+
+h1 {
+  /* Default/Bold/LargeTitle */
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+}
+
+h2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.374px;
+  color: #000000;
 }
 
 a,
-.green {
+.white {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--vt-c-white);
   transition: 0.4s;
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
-}
+} */
 
 @media (min-width: 1024px) {
   body {
