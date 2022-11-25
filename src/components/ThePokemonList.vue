@@ -1,18 +1,33 @@
 <script setup lang="ts">
 import PokemonCard from "@/components/elements/PokemonCard.vue";
-import ListHeader from "./elements/ListHeader.vue";
-import Input from "@/components/elements/Input.vue";
-import ListNavButton from "./elements/NavButton.vue";
+import TheHeader from "./TheHeader.vue";
+import CustomInput from "@/components/elements/Input.vue";
+import NavButton from "./elements/NavButton.vue";
 </script>
 
 <template>
-  <ListHeader />
-  <Input name="Pokemon zoeken" value="" placeholder="Pokemon zoeken" />
-  <div class="button-container"><ListNavButton /> <ListNavButton /></div>
-  <PokemonCard />
+  <main>
+    <TheHeader title="Pok&#233;dex" is-list-view />
+    <CustomInput name="Pokemon zoeken" placeholder="Pokemon zoeken" />
+    <div class="button-container">
+      <NavButton name="Team" />
+      <NavButton name="Favorites" />
+    </div>
+
+    <PokemonCard />
+  </main>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts">
+export default {
+  name: "ThePokemonList",
+  props: {
+    pokemonList: {
+      type: Array,
+    },
+  },
+};
+</script>
 
 <style scoped>
 .button-container {
