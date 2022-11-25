@@ -3,16 +3,20 @@ import TheFavoritesList from "@/components/TheFavoritesList.vue";
 </script>
 
 <template>
-  <TheFavoritesList />
+  <main class="favorites">
+    <TheFavoritesList />
+  </main>
 </template>
 
-<style>
+<style scoped>
+.favorites {
+  background: linear-gradient(109.73deg, #65cb9a 0%, #15d0dc 100%);
+}
 @media (min-width: 1024px) {
   .favorites {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(109.73deg, #46469c 0%, #7e32e0 100%);
   }
 }
 </style>
