@@ -5,7 +5,7 @@ import CustomInput from "@/components/elements/Input.vue";
 </script>
 
 <template>
-  <TheHeader title="Team" />
+  <TheHeader title="Team" is-light-color />
   <CustomInput name="Pokemon zoeken" placeholder="Pokemon zoeken" />
 
   <PokemonCard />
