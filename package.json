@@ -16,6 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
+    "vue-easy-lightbox": "^1.10.0",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
